@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/vuelos</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping class="com.vuelos.domain.Aerolinea"/>
+        <mapping class="com.vuelos.domain.Aeropuerto"/>
+        <mapping class="com.vuelos.domain.Asientos"/>
+        <mapping class="com.vuelos.domain.Avion"/>    
+        <mapping class="com.vuelos.domain.Ciudades"/>    
+        <mapping class="com.vuelos.domain.Clientes"/>
+        <mapping class="com.vuelos.domain.Estado_Asiento"/>
+        <mapping class="com.vuelos.domain.Estado"/>
+        <mapping class="com.vuelos.domain.Itinerario"/>
+        <mapping class="com.vuelos.domain.Reserva"/>
+        <mapping class="com.vuelos.domain.Tarifas"/>
+        <mapping class="com.vuelos.domain.Tipo_Clase"/>
+        <mapping class="com.vuelos.domain.Tipo_Vuelos"/>
+        <mapping class="com.vuelos.domain.Ubicacion"/>
+        <mapping class="com.vuelos.domain.Vuelos"/>
+    </session-factory>
+</hibernate-configuration>
